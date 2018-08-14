@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title> Grocery Divider </title>
+    <title> Splitter </title>
     <link href="https://fonts.googleapis.com/css?family=Francois+One|Righteous" rel="stylesheet">
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style media="screen">
 
 * {
@@ -49,10 +51,16 @@ button {
     border: none;
 }
 
-.add {
+.add{
     bottom: 20px;
     right: 20px;
     background : #4256f4;
+}
+
+.remove {
+  bottom: 20px;
+  right: 150px;
+  background : red;
 }
 
 .add:hover {
@@ -264,7 +272,7 @@ input[type=number]{
 .username {
   height: 100%;
   width: 20%;
-  background: #3f89ff;
+  background: grey;
   color: white;
   display: flex;
   justify-content: center;
@@ -314,14 +322,26 @@ input[type=number]{
 }
 
 
+.positive {
+  background: green;
+}
+
+.negative {
+  background: red;
+}
+
+.balance {
+background: #3f89ff;
+}
+
 @media (max-width: 1000px){
 
   .fa-bars{
     display: block;
     position: absolute;
     left: 20px;
-    top: 20px;
-    font-size: 25px;
+    top: 10px;
+    font-size: 30px;
   }
 
   .nav_left {
@@ -330,14 +350,13 @@ input[type=number]{
 
   .nav_mobile {
     display: flex;
-    width: 90%;
-
+    width: 100%;
+    height: 90%;
     position: absolute;
-    left: 50px;
+    top: 7%;
   }
 
   .content {
-    padding: 20px 0px 0px 50px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -346,23 +365,19 @@ input[type=number]{
 
   .top_content {
     flex-direction: column;
-    width: 90%;
+    width: 100%;
     height: 40%;
   }
 
-  .top_left {
-    width: 100%;
+  .top_left, .top_right {
+    margin: auto;
+    width: 96%;
     height: 40%;
   }
 
   .fa-plus-square-o {
     font-size: 50px;
     font-weight: bold;
-  }
-
-  .top_right{
-    width: 100%;
-    height: 40%;
   }
 
   .graphic_title{
@@ -372,20 +387,21 @@ input[type=number]{
     font-size: 29px;
   }
   .bottom_content {
+    margin: 0 auto;
     height: 40%;
-    width: 90%;
+    width: 96%;
   }
   .summary_row {
     width: 100%;
     height: 50px;
   }
 
-  .username{
-    font-size: 12px;
+  .username, .user_total{
+    font-size: 15px;
   }
 
-  .user_total, .user_summary{
-    font-size: 12px;
+  .user_summary{
+    font-size: 10px;
   }
 
 

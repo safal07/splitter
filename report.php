@@ -6,7 +6,8 @@ include_once "database/dbconnect.php";
 echo '<!DOCTYPE html>
 <html>
   <head>
-    <title> Grocery Divider </title>
+    <title> Splitter </title>
+
     <style>
       table {
           font-family: arial, sans-serif;
